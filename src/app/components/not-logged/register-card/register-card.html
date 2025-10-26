@@ -1,1 +1,14 @@
-<p>register-card works!</p>
+<div id="login-card-container">
+    <div>
+        <h2>Entre na sua conta</h2>
+    </div>
+    <form>
+        <input type="email" id="email" name="email" placeholder="Seu nome completo" required />
+        <input type="password" id="password" placeholder="Seu melhor email" name="password" required />
+        <input type="password" id="password" placeholder="Sua senha" name="password" required />
+
+        <button id="submit" type="submit">Entrar na conta</button>
+        <p routerLink="/forgot-password" id="forgot-password">Esqueci minha senha</p>
+        <p>Já tem uma conta? <span routerLink="/login" class="assine-agora">Faça Login</span></p>
+    </form>
+</div>
