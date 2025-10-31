@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Header } from "../../../components/logged/header/header";
+import { Header } from "../../../components/not-logged/header/header";
 import { LoginCard } from "../../../components/not-logged/login-card/login-card";
 import { RegisterCard } from "../../../components/not-logged/register-card/register-card";
 

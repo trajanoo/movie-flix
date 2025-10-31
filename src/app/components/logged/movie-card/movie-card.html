@@ -1,1 +1,28 @@
-<p>movie-card works!</p>
+<div class="movie-card">
+    <div class="top-tag" *ngIf="isTop10">TOP 10</div>
+    <div class="card-content">
+        <h2 class="movie-title">{{ title }}</h2>
+        <p class="movie-description">{{ description }}</p>
+
+        <div class="movie-info">
+            <div class="d-flex align-items-center gap-3">
+                <span class="duration">
+                    <i class="bi bi-clock"></i> {{ duration }}
+                </span>
+
+                <span class="age-rating">
+                    <i class="bi bi-badge-18k"></i>🔞 {{ ageRating }}
+                </span>
+            </div>
+
+            <div class="rating">
+                <i class="bi bi-hand-thumbs-up-fill"></i>
+                🏆 {{ approvalRating }}% Aprovação
+            </div>
+
+            <div class="provider mt-2">
+                <img [src]="providerLogoUrl" alt="" class="provider-logo">
+            </div>
+        </div>
+    </div>
+</div>
